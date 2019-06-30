@@ -3,9 +3,14 @@ import sys
 import json
 import logging
 
+from logging.handlers import TimedRotatingFileHandler
+
+import tweepy
 from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
+
+from tw_streamer.utils.log_utils import init_logger
 
 
 # Variables that contains the user credentials to access Twitter API
@@ -109,16 +114,48 @@ consumer_secret = os.environ.get("CONSUMER_SECRET")
 """
 
 
+# In Redis:
+#   Key: STATE in format USA:TX, USA:IL, etc...
+
+
 # This is a basic listener that just prints received tweets to stdout.
 class StdOutListener(StreamListener):
 
-    def on_data(self, data: str):
+    def on_data(self, data: str) -> bool:
         data = json.loads(data)
-        if data['geo'] is not None or data['coordinates'] is not None:
-            logger.info(f"TW: {data}")
-        else:
-            logger.info(f"No GEO: {data['user']['location']}")
-        return True
+        try:
+            if data['geo'] is not None or data['coordinates'] is not None:
+                #
+                # This is valid only if GPS coordinates are present
+                #   Check whether coordinates are inside the state polygon
+                #
+                #
+                logger.info(f"TW: {data}")
+                pass
+            else:
+                #
+                # Get the location: str
+                location = data['user']['location']
+
+                if location is None:
+                    return True
+
+                # Parse the location string to get STATE
+                # Check only tweets with location in format:
+                #   CITY, STATE
+                #   STATE, COUNTRY, where country == USA
+
+                # Convert string to lower string
+                location = location.lower()
+
+                #
+                #
+                #
+                logger.info(f"No GEO: {data['user']['location']}")
+                # pass
+            return True
+        except KeyError:
+            return True
 
     def on_error(self, status):
         logger.error(status)
@@ -132,18 +169,11 @@ def main():
     stream = Stream(auth, l)
 
     # This line filter Twitter Streams to capture data by the keywords: 'python', 'javascript', 'ruby'
-    stream.filter(track=['tesla', 'Elon Musk', 'ElonMusk'])
+    # stream.filter(track=['l'])
+    stream.filter(track=['the'])
 
 
 if __name__ == '__main__':
-    logger = logging.getLogger(__name__)
-    logger.setLevel(logging.DEBUG)
-
-    # Add handler
-    handler = logging.StreamHandler(sys.stdout)
-    formatter = logging.Formatter("[%(asctime)s][%(name)s][%(levelname)s] %(message)s")
-    handler.setFormatter(formatter)
-
-    logger.addHandler(handler)
+    logger = init_logger()
 
     main()
