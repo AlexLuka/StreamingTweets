@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a867773-c193-4f7e-ae8c-24c886a3b355" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tw_streamer/engine/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tw_streamer/engine/enum_vals.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tw_streamer/engine/twetter_stream_monitor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tw_streamer/utils/redis_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tw_streamer/engine/data_processing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tw_streamer/engine/twetter_stream_monitor.py" beforeDir="false" afterPath="$PROJECT_DIR$/tw_streamer/engine/twetter_stream_monitor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tw_streamer/launcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/tw_streamer/launcher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tw_streamer/utils/log_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tw_streamer/utils/log_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tw_streamer/utils/redis_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tw_streamer/utils/redis_utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,14 +31,14 @@
           <entry key="info" value="1" />
           <entry key="json" value="1" />
           <entry key="logfile" value="2" />
-          <entry key="py" value="10" />
+          <entry key="py" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="10" />
+          <entry key="Python" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -47,15 +47,15 @@
           <entry key="gitignore" value="35" />
           <entry key="info" value="11" />
           <entry key="json" value="84" />
-          <entry key="py" value="3684" />
-          <entry key="txt" value="27" />
+          <entry key="py" value="4829" />
+          <entry key="txt" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="84" />
-          <entry key="PLAIN_TEXT" value="81" />
-          <entry key="Python" value="3684" />
+          <entry key="PLAIN_TEXT" value="90" />
+          <entry key="Python" value="4829" />
         </counts>
       </usages-collector>
     </session>
@@ -65,26 +65,48 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tw_streamer/launcher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+            <state relative-caret-position="238">
+              <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
               <folding>
                 <element signature="e#25#36#0" expanded="true" />
-                <marker date="1561921258866" expanded="true" signature="1146:1576" ph="..." />
+                <marker date="1561921740476" expanded="true" signature="1129:1132" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tw_streamer/utils/log_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+                <marker date="1561924319255" expanded="true" signature="101:102" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tw_streamer/engine/twetter_stream_monitor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="77" column="9" lean-forward="true" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+            <state relative-caret-position="151">
+              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <marker date="1561921400037" expanded="true" signature="301:306" ph="..." />
-                <marker date="1561921400037" expanded="true" signature="1760:1962" ph="..." />
+                <marker date="1561924319065" expanded="true" signature="361:366" ph="..." />
+                <marker date="1561924319065" expanded="true" signature="1820:2116" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tw_streamer/engine/data_processing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="742">
+              <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -103,11 +125,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tw_streamer/utils/redis_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+            <state relative-caret-position="240">
+              <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
               <folding>
-                <marker date="1561921462486" expanded="true" signature="163:168" ph="..." />
-                <marker date="1561921462486" expanded="true" signature="580:585" ph="..." />
+                <marker date="1561924319210" expanded="true" signature="164:169" ph="..." />
+                <marker date="1561924319210" expanded="true" signature="583:588" ph="..." />
               </folding>
             </state>
           </provider>
@@ -141,12 +163,13 @@
         <option value="$PROJECT_DIR$/secrets.json" />
         <option value="$PROJECT_DIR$/src/simple_test.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/tw_streamer/utils/log_utils.py" />
         <option value="$PROJECT_DIR$/tw_streamer/__init__.py" />
         <option value="$PROJECT_DIR$/tw_streamer/engine/enum_vals.py" />
         <option value="$PROJECT_DIR$/tw_streamer/launcher.py" />
-        <option value="$PROJECT_DIR$/tw_streamer/engine/twetter_stream_monitor.py" />
+        <option value="$PROJECT_DIR$/tw_streamer/engine/data_processing.py" />
         <option value="$PROJECT_DIR$/tw_streamer/utils/redis_utils.py" />
+        <option value="$PROJECT_DIR$/tw_streamer/utils/log_utils.py" />
+        <option value="$PROJECT_DIR$/tw_streamer/engine/twetter_stream_monitor.py" />
       </list>
     </option>
   </component>
@@ -296,19 +319,25 @@
       <option name="project" value="LOCAL" />
       <updated>1561914908795</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="New files">
+      <created>1561921471984</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1561921471984</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17255937" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43986255" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.49026346" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -328,7 +357,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding .idea to gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding .idea to gitignore" />
+    <MESSAGE value="New files" />
+    <option name="LAST_COMMIT_MESSAGE" value="New files" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/info">
@@ -369,39 +399,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tw_streamer/utils/log_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <marker date="1561914339679" expanded="true" signature="101:102" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tw_streamer/launcher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
-          <folding>
-            <element signature="e#25#36#0" expanded="true" />
-            <marker date="1561921258866" expanded="true" signature="1146:1576" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tw_streamer/utils/redis_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-          <folding>
-            <marker date="1561921462486" expanded="true" signature="163:168" ph="..." />
-            <marker date="1561921462486" expanded="true" signature="580:585" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tw_streamer/engine/enum_vals.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -411,14 +408,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tw_streamer/launcher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+          <folding>
+            <element signature="e#25#36#0" expanded="true" />
+            <marker date="1561921740476" expanded="true" signature="1129:1132" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tw_streamer/engine/twetter_stream_monitor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="77" column="9" lean-forward="true" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+        <state relative-caret-position="151">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <marker date="1561921400037" expanded="true" signature="301:306" ph="..." />
-            <marker date="1561921400037" expanded="true" signature="1760:1962" ph="..." />
+            <marker date="1561924319065" expanded="true" signature="361:366" ph="..." />
+            <marker date="1561924319065" expanded="true" signature="1820:2116" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tw_streamer/utils/redis_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <folding>
+            <marker date="1561924319210" expanded="true" signature="164:169" ph="..." />
+            <marker date="1561924319210" expanded="true" signature="583:588" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tw_streamer/engine/data_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="742">
+          <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tw_streamer/utils/log_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1561924319255" expanded="true" signature="101:102" ph="..." />
           </folding>
         </state>
       </provider>

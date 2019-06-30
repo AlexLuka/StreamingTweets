@@ -9,6 +9,7 @@ from tweepy import Stream
 
 from tw_streamer.utils.redis_utils import check_on_target_word
 from tw_streamer.engine.enum_vals import Constants
+from tw_streamer.engine.data_processing import process_data
 
 
 class StreamMonitoringService:
@@ -63,6 +64,8 @@ class StdOutListener(StreamListener):
         # Set current target name
         self.current_target_word = current_target_word
 
+        self.logger.info(f"StdOutListener initialized on word '{self.current_target_word}'")
+
     def on_data(self, data: str) -> bool:
         #
         # Check on target word update
@@ -71,6 +74,9 @@ class StdOutListener(StreamListener):
             return False
 
         data = json.loads(data)
+
+        state = process_data(data)
+        self.logger.info(f"Got state: '{state}'")
 
         #
         # Here we will extract data from tweet and push it to Redis

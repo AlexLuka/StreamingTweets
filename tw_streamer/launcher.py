@@ -22,16 +22,12 @@ from tw_streamer.engine.twetter_stream_monitor import StreamMonitoringService
 # consumer_secret = os.environ.get("CONSUMER_SECRET")
 
 
-
-
-
 # In Redis:
 #   Key: STATE in format USA:TX, USA:IL, etc...
 
 
 def main():
     the_word = 'the'
-
 
     while True:
         # Monitor some specific word in twitter
@@ -44,23 +40,6 @@ def main():
         StreamMonitoringService().run(the_word)
 
         sleep(5)
-
-    #
-
-
-
-
-
-
-    # This handles Twitter authetification and the connection to Twitter Streaming API
-    l = StdOutListener()
-    auth = OAuthHandler(consumer_key, consumer_secret)
-    auth.set_access_token(access_token, access_token_secret)
-    stream = Stream(auth, l)
-
-    # This line filter Twitter Streams to capture data by the keywords: 'python', 'javascript', 'ruby'
-    # stream.filter(track=['l'])
-    stream.filter(track=['the'])
 
 
 if __name__ == '__main__':
