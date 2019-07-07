@@ -87,7 +87,7 @@ class StdOutListener(StreamListener):
             return True
 
         # 'STATE:STATE_ABBREVIATION'
-        key = f'STATE:{state}'
+        key = f'USA:{state}:CITY:{self.current_target_word}'
         self.logger.info(f"KEY: '{key}'")
         try:
             self.redis_client.incr(key, amount=1)

@@ -1,15 +1,4 @@
-# import os
-# import sys
-import json
-# import logging
-
-# ?\from logging.handlers import TimedRotatingFileHandler
 from time import sleep
-
-# import tweepy
-from tweepy.streaming import StreamListener
-from tweepy import OAuthHandler
-from tweepy import Stream
 
 from tw_streamer.utils.log_utils import init_logger
 from tw_streamer.engine.twetter_stream_monitor import StreamMonitoringService
