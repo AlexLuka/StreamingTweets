@@ -9,10 +9,11 @@ WORKDIR /opt
 COPY setup.py /opt/
 COPY tw_streamer /opt/tw_streamer
 
-RUN pip --no-cache-dir install redis \
- && pip --no-cache-dir install tweepy \
+RUN pip install redis \
+ && pip install tweepy \
  && python setup.py sdist \
- && pip --no-cache-dir install dist/tw_streamer* \
+ && pip install dist/tw_streamer* \
  && rm -r dist setup.py tw_streamer
 
-CMD "python -m tw_streamer.launcher"
+CMD [ "python", "-m", "tw_streamer.launcher" ]
+# CMD "python -m tw_streamer.launcher"

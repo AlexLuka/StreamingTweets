@@ -3,13 +3,12 @@ import json
 import logging
 import random
 import redis
-import time
 
 from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
 
-from tw_streamer.utils.redis_utils import check_on_target_word
+from tw_streamer.utils.redis_utils import check_on_target_word, redis_connect
 from tw_streamer.engine.enum_vals import Constants
 from tw_streamer.engine.data_processing import process_data
 
@@ -67,14 +66,14 @@ class StdOutListener(StreamListener):
         self.current_target_word = current_target_word
 
         # Redis client
-        self.redis_client = self.redis_connect()
+        self.redis_client = redis_connect()
 
         self.logger.info(f"StdOutListener initialized on word '{self.current_target_word}'")
 
     def on_data(self, data: str) -> bool:
         #
         # Check on target word update
-        if not check_on_target_word(self.current_target_word):
+        if not check_on_target_word(self.current_target_word, self.redis_client):
             self.logger.info(f"Current target word was updated. STOP Listening the '{self.current_target_word}' word")
             return False
 
@@ -93,7 +92,7 @@ class StdOutListener(StreamListener):
             self.redis_client.incr(key, amount=1)
         except (redis.exceptions.AuthenticationError,
                 redis.exceptions.ConnectionError):
-            self.redis_client = self.redis_connect()
+            self.redis_client = redis_connect()
             self.redis_client.incr(key, amount=1)
 
         #
@@ -105,17 +104,17 @@ class StdOutListener(StreamListener):
     def on_error(self, status):
         self.logger.error(status)
 
-    @staticmethod
-    def redis_connect():
-        n = 0
-        while n < 120:
-            try:
-                return redis.Redis(host='localhost', port=6379, db=0)
-            except redis.exceptions.ConnectionError:
-                time.sleep(5)
-                n += 1
-        # TODO Send notification to user
-        raise ValueError("PIZDEC POGORELLI !!!")
+    # @staticmethod
+    # def redis_connect():
+    #     n = 0
+    #     while n < 120:
+    #         try:
+    #             return redis.Redis(host=os.environ.get('REDIS_HOST', 'failed_host'), port=6379, db=0)
+    #         except redis.exceptions.ConnectionError:
+    #             time.sleep(5)
+    #             n += 1
+    #     # TODO Send notification to user
+    #     raise ValueError("PIZDEC POGORELLI !!!")
 
 """
 {

@@ -28,5 +28,5 @@ print('TEST: ', rc.get('foo'))
 
 # rc.incr('MMM', 1)
 
-print("Tweeters from Texas: ", rc.get('STATE:TX'))
-print("Tweeters from California: ", rc.get('STATE:CA'))
+print("Tweeters from Texas: ", rc.get('USA:TX:CITY:the'))
+print("Tweeters from California: ", rc.get('USA:CA:CITY:the'))
