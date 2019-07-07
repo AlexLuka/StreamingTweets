@@ -2,6 +2,8 @@ import os
 import json
 import logging
 import random
+import redis
+import time
 
 from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
@@ -64,6 +66,9 @@ class StdOutListener(StreamListener):
         # Set current target name
         self.current_target_word = current_target_word
 
+        # Redis client
+        self.redis_client = self.redis_connect()
+
         self.logger.info(f"StdOutListener initialized on word '{self.current_target_word}'")
 
     def on_data(self, data: str) -> bool:
@@ -78,6 +83,19 @@ class StdOutListener(StreamListener):
         state = process_data(data)
         self.logger.info(f"Got state: '{state}'")
 
+        if state is None:
+            return True
+
+        # 'STATE:STATE_ABBREVIATION'
+        key = f'STATE:{state}'
+        self.logger.info(f"KEY: '{key}'")
+        try:
+            self.redis_client.incr(key, amount=1)
+        except (redis.exceptions.AuthenticationError,
+                redis.exceptions.ConnectionError):
+            self.redis_client = self.redis_connect()
+            self.redis_client.incr(key, amount=1)
+
         #
         # Here we will extract data from tweet and push it to Redis
         #
@@ -87,6 +105,17 @@ class StdOutListener(StreamListener):
     def on_error(self, status):
         self.logger.error(status)
 
+    @staticmethod
+    def redis_connect():
+        n = 0
+        while n < 120:
+            try:
+                return redis.Redis(host='localhost', port=6379, db=0)
+            except redis.exceptions.ConnectionError:
+                time.sleep(5)
+                n += 1
+        # TODO Send notification to user
+        raise ValueError("PIZDEC POGORELLI !!!")
 
 """
 {

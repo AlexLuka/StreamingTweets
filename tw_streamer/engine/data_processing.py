@@ -5,12 +5,23 @@ logger = logging.getLogger(__name__)
 
 
 states = {
-    'alabama': 'al',
-    'alaska': 'ak',
-    'illinois': 'il',
-    'mississippi': 'ms',
-    'texas': "tx",
-    'wisconsin': 'wi'
+    'AL': ('alabama', 'al'),
+    'AK': ('alaska', 'ak'),
+    'AZ': ('arizona', 'az'),
+    'AR': ('arkansas', 'ar'),
+    'CA': ('california', 'ca'),
+    'CO': ('colorado', 'co'),
+    'CT': ('connecticut', 'ct'),
+    'DE': ('delaware', 'de'),
+    'FL': ('florida', 'fl'),
+    'GA': ('georgia', 'ga'),
+    'HI': ('hawaii', 'hi'),
+    'IL': ('illinois', 'il'),
+    'MS': ('mississippi', 'ms'),
+    'NJ': ('new jersey', 'nj'),
+    'PA': ('pennsylvania', 'pa'),
+    'TX': ('texas', "tx"),
+    'WI': ('wisconsin', 'wi')
 }
 
 
@@ -46,24 +57,18 @@ def process_data(data: dict):
             state = words[0].strip()
 
             if len(state) == 2:
-                return state
+                return state.upper()
             else:
-                try:
-                    return states[state]
-                except KeyError:
-                    return None
+                for state_abbr, state_words in states.items():
+                    if state in state_words:
+                        return state_abbr
         else:
             state = words[1].strip()
 
-            try:
-                return states[state]
-            except KeyError:
-                if state in states.values():
-                    return state
-                return None
-
-
-
+            for state_abbr, state_words in states.items():
+                if state in state_words:
+                    return state_abbr
         # logger.debug(f"Got two words: {words}")
     else:
         logger.debug(f"Got more or less than 2 words: {words}")
+    return None
