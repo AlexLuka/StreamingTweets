@@ -20,7 +20,7 @@ class Constants:
 
     STATES = {
         'AL': ('alabama', 'al'),
-        'AK': ('alaska', 'ak'),
+        # 'AK': ('alaska', 'ak'),
         'AZ': ('arizona', 'az'),
         'AR': ('arkansas', 'ar'),
         'CA': ('california', 'ca'),
@@ -29,7 +29,7 @@ class Constants:
         'DE': ('delaware', 'de'),
         'FL': ('florida', 'fl'),
         'GA': ('georgia', 'ga'),
-        'HI': ('hawaii', 'hi'),
+        # 'HI': ('hawaii', 'hi'),
         'IL': ('illinois', 'il'),
         'MS': ('mississippi', 'ms'),
         'NJ': ('new jersey', 'nj'),
