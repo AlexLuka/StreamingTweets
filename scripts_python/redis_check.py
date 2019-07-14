@@ -27,6 +27,12 @@ print('TEST: ', rc.get('foo'))
 #     print(f'timestamp: {ts}, variable: {var}, type={type(var).__name__}')
 
 # rc.incr('MMM', 1)
+target_word = 'one'
 
-print("Tweeters from Texas: ", rc.get('USA:TX:CITY:the'))
-print("Tweeters from California: ", rc.get('USA:CA:CITY:the'))
+print("Tweeters from Texas: ", rc.get(f'USA:TX:CITY:{target_word}'))
+print("Tweeters from California: ", rc.get(f'USA:CA:CITY:{target_word}'))
+
+
+print(f"TW: {rc.get('TARGET_WORD').decode('utf-8')}")
+
+rc.set('TARGET_WORD', target_word)
