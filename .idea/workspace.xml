@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a867773-c193-4f7e-ae8c-24c886a3b355" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts_bash/start_cont.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts_python/redis_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts_python/redis_check.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tw_streamer/engine/twetter_stream_monitor.py" beforeDir="false" afterPath="$PROJECT_DIR$/tw_streamer/engine/twetter_stream_monitor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tw_streamer/launcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/tw_streamer/launcher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tw_streamer/utils/log_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tw_streamer/utils/log_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tw_streamer/utils/redis_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tw_streamer/utils/redis_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tw_streamer/engine/data_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/tw_streamer/engine/data_processing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tw_streamer/engine/enum_vals.py" beforeDir="false" afterPath="$PROJECT_DIR$/tw_streamer/engine/enum_vals.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +21,8 @@
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.35" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.49" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -35,16 +32,16 @@
           <entry key="info" value="2" />
           <entry key="json" value="1" />
           <entry key="logfile" value="2" />
-          <entry key="py" value="16" />
-          <entry key="sh" value="3" />
+          <entry key="py" value="17" />
+          <entry key="sh" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Dockerfile" value="1" />
           <entry key="JSON" value="1" />
-          <entry key="PLAIN_TEXT" value="12" />
-          <entry key="Python" value="16" />
+          <entry key="PLAIN_TEXT" value="13" />
+          <entry key="Python" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -54,28 +51,28 @@
           <entry key="gitignore" value="41" />
           <entry key="info" value="11" />
           <entry key="json" value="84" />
-          <entry key="py" value="7143" />
-          <entry key="sh" value="229" />
-          <entry key="txt" value="115" />
+          <entry key="py" value="7955" />
+          <entry key="sh" value="431" />
+          <entry key="txt" value="127" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Dockerfile" value="388" />
           <entry key="JSON" value="84" />
-          <entry key="PLAIN_TEXT" value="404" />
-          <entry key="Python" value="7143" />
+          <entry key="PLAIN_TEXT" value="618" />
+          <entry key="Python" value="7955" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tw_streamer/launcher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="27" column="66" lean-forward="true" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
+            <state relative-caret-position="292">
+              <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
                 <marker date="1562528286635" expanded="true" signature="1059:1062" ph="..." />
@@ -87,21 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts_bash/start_cont.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tw_streamer/utils/log_utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-                <marker date="1562526673658" expanded="true" signature="103:104" ph="..." />
-              </folding>
+            <state relative-caret-position="496">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -122,8 +106,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tw_streamer/engine/data_processing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1512">
-              <caret line="69" column="37" selection-start-line="67" selection-start-column="12" selection-end-line="69" selection-end-column="37" />
+            <state relative-caret-position="888">
+              <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,34 +118,37 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tw_streamer/utils/redis_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="68">
+              <caret line="44" column="85" selection-start-line="44" selection-start-column="85" selection-end-line="44" selection-end-column="85" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <marker date="1562528286764" expanded="true" signature="243:248" ph="..." />
-                <marker date="1562528286764" expanded="true" signature="1114:1119" ph="..." />
+                <marker date="1563119534139" expanded="true" signature="313:318" ph="..." />
+                <marker date="1563119534139" expanded="true" signature="1778:1783" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tw_streamer/engine/enum_vals.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <marker date="1563121060697" expanded="true" signature="48:53" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts_python/redis_check.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="624">
+              <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -182,19 +172,19 @@
         <option value="$PROJECT_DIR$/secrets.json" />
         <option value="$PROJECT_DIR$/src/simple_test.py" />
         <option value="$PROJECT_DIR$/tw_streamer/__init__.py" />
-        <option value="$PROJECT_DIR$/tw_streamer/engine/enum_vals.py" />
-        <option value="$PROJECT_DIR$/tw_streamer/engine/data_processing.py" />
         <option value="$PROJECT_DIR$/scripts/start_redis.sh" />
         <option value="$PROJECT_DIR$/src/redis_check.py" />
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/tw_streamer/utils/log_utils.py" />
-        <option value="$PROJECT_DIR$/scripts_python/redis_check.py" />
-        <option value="$PROJECT_DIR$/scripts_bash/start_cont.sh" />
         <option value="$PROJECT_DIR$/tw_streamer/engine/twetter_stream_monitor.py" />
-        <option value="$PROJECT_DIR$/tw_streamer/utils/redis_utils.py" />
         <option value="$PROJECT_DIR$/tw_streamer/launcher.py" />
+        <option value="$PROJECT_DIR$/tw_streamer/utils/redis_utils.py" />
+        <option value="$PROJECT_DIR$/scripts_bash/start_cont.sh" />
+        <option value="$PROJECT_DIR$/tw_streamer/engine/enum_vals.py" />
+        <option value="$PROJECT_DIR$/tw_streamer/engine/data_processing.py" />
+        <option value="$PROJECT_DIR$/scripts_python/redis_check.py" />
       </list>
     </option>
   </component>
@@ -215,11 +205,6 @@
             <path>
               <item name="TweeterAPI" type="b2602c69:ProjectViewProjectNode" />
               <item name="TweeterAPI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TweeterAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TweeterAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="tw_streamer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -406,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562522018357</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Use rabotaet">
+      <created>1563120773178</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1563120773178</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -418,7 +410,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38487974" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30584192" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39977092" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -441,7 +433,8 @@
     <MESSAGE value="New files" />
     <MESSAGE value="Created new scrips" />
     <MESSAGE value="Created a Dockerfile and updated redis keys format" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a Dockerfile and updated redis keys format" />
+    <MESSAGE value="Use rabotaet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use rabotaet" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/secrets.json" />
@@ -473,15 +466,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tw_streamer/engine/enum_vals.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1561920283610" expanded="true" signature="16:21" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tw_streamer/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -506,40 +490,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tw_streamer/engine/data_processing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="69" column="37" selection-start-line="67" selection-start-column="12" selection-end-line="69" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts_bash/start_cont.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="384">
           <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts_python/redis_check.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tw_streamer/utils/log_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
+        <state relative-caret-position="-196">
           <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -548,14 +508,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tw_streamer/utils/redis_utils.py">
+    <entry file="file://$PROJECT_DIR$/tw_streamer/launcher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="292">
+          <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <marker date="1562528286764" expanded="true" signature="243:248" ph="..." />
-            <marker date="1562528286764" expanded="true" signature="1114:1119" ph="..." />
+            <marker date="1562528286635" expanded="true" signature="1059:1062" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts_bash/start_cont.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tw_streamer/utils/redis_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="44" column="85" selection-start-line="44" selection-start-column="85" selection-end-line="44" selection-end-column="85" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1563119534139" expanded="true" signature="313:318" ph="..." />
+            <marker date="1563119534139" expanded="true" signature="1778:1783" ph="..." />
           </folding>
         </state>
       </provider>
@@ -571,13 +549,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tw_streamer/launcher.py">
+    <entry file="file://$PROJECT_DIR$/tw_streamer/engine/data_processing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="27" column="66" lean-forward="true" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
+        <state relative-caret-position="888">
+          <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1562528286635" expanded="true" signature="1059:1062" ph="..." />
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tw_streamer/engine/enum_vals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <marker date="1563121060697" expanded="true" signature="48:53" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts_python/redis_check.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>

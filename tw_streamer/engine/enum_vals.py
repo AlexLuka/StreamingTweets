@@ -17,3 +17,23 @@ class Constants:
         ex.TimeoutError,
         ex.NoScriptError
     )
+
+    STATES = {
+        'AL': ('alabama', 'al'),
+        'AK': ('alaska', 'ak'),
+        'AZ': ('arizona', 'az'),
+        'AR': ('arkansas', 'ar'),
+        'CA': ('california', 'ca'),
+        'CO': ('colorado', 'co'),
+        'CT': ('connecticut', 'ct'),
+        'DE': ('delaware', 'de'),
+        'FL': ('florida', 'fl'),
+        'GA': ('georgia', 'ga'),
+        'HI': ('hawaii', 'hi'),
+        'IL': ('illinois', 'il'),
+        'MS': ('mississippi', 'ms'),
+        'NJ': ('new jersey', 'nj'),
+        'PA': ('pennsylvania', 'pa'),
+        'TX': ('texas', "tx"),
+        'WI': ('wisconsin', 'wi')
+    }
