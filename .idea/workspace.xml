@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a867773-c193-4f7e-ae8c-24c886a3b355" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/map.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,7 +27,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Dockerfile" value="1" />
-          <entry key="gitignore" value="5" />
+          <entry key="gitignore" value="6" />
           <entry key="info" value="2" />
           <entry key="json" value="1" />
           <entry key="logfile" value="2" />
@@ -42,7 +40,7 @@
         <counts>
           <entry key="Dockerfile" value="1" />
           <entry key="JSON" value="1" />
-          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="PLAIN_TEXT" value="15" />
           <entry key="Python" value="20" />
         </counts>
       </usages-collector>
@@ -50,13 +48,13 @@
         <counts>
           <entry key="Dockerfile" value="388" />
           <entry key="dummy" value="8" />
-          <entry key="gitignore" value="41" />
+          <entry key="gitignore" value="49" />
           <entry key="info" value="11" />
           <entry key="json" value="84" />
           <entry key="md" value="41" />
-          <entry key="py" value="10899" />
+          <entry key="py" value="10925" />
           <entry key="sh" value="431" />
-          <entry key="txt" value="164" />
+          <entry key="txt" value="225" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -64,27 +62,14 @@
           <entry key="Dockerfile" value="388" />
           <entry key="JSON" value="84" />
           <entry key="Markdown" value="41" />
-          <entry key="PLAIN_TEXT" value="655" />
-          <entry key="Python" value="10899" />
+          <entry key="PLAIN_TEXT" value="724" />
+          <entry key="Python" value="10925" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tw_streamer/launcher.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <marker date="1562528286635" expanded="true" signature="1059:1062" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts_bash/start_cont.sh">
           <provider selected="true" editor-type-id="text-editor">
@@ -136,7 +121,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tw_streamer/engine/enum_vals.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
+            <state relative-caret-position="527">
               <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
               <folding>
                 <marker date="1563125948594" expanded="true" signature="48:53" ph="..." />
@@ -157,28 +142,37 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts_python/plot_map.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+            <state relative-caret-position="264">
+              <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
               <folding>
-                <marker date="1563132738131" expanded="true" signature="2146:2288" ph="..." />
+                <marker date="1563725670571" expanded="true" signature="2162:2304" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="48">
-                <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+                <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
               </first_editor>
               <second_editor>
                 <js_state />
               </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -214,7 +208,6 @@
         <option value="$PROJECT_DIR$/scripts/start_redis.sh" />
         <option value="$PROJECT_DIR$/src/redis_check.py" />
         <option value="$PROJECT_DIR$/setup.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/tw_streamer/utils/log_utils.py" />
         <option value="$PROJECT_DIR$/tw_streamer/engine/twetter_stream_monitor.py" />
@@ -224,8 +217,9 @@
         <option value="$PROJECT_DIR$/tw_streamer/engine/data_processing.py" />
         <option value="$PROJECT_DIR$/scripts_python/redis_check.py" />
         <option value="$PROJECT_DIR$/tw_streamer/engine/enum_vals.py" />
-        <option value="$PROJECT_DIR$/scripts_python/plot_map.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/scripts_python/plot_map.py" />
       </list>
     </option>
   </component>
@@ -251,7 +245,7 @@
             <path>
               <item name="TweeterAPI" type="b2602c69:ProjectViewProjectNode" />
               <item name="TweeterAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TweeterAPI" type="b2602c69:ProjectViewProjectNode" />
@@ -490,14 +484,35 @@
       <option name="project" value="LOCAL" />
       <updated>1563132754071</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="README added">
+      <created>1563724669657</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1563724669657</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added more dirs to gitignore">
+      <created>1563724887752</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1563724887752</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added one more state">
+      <created>1563725708922</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1563725708922</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17255937" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17255937" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -528,7 +543,10 @@
     <MESSAGE value="Use rabotaet" />
     <MESSAGE value="Final" />
     <MESSAGE value="Matp[lotlib visualization added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Matp[lotlib visualization added" />
+    <MESSAGE value="README added" />
+    <MESSAGE value="Added more dirs to gitignore" />
+    <MESSAGE value="Added one more state" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added one more state" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/secrets.json" />
@@ -567,17 +585,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -653,32 +667,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tw_streamer/engine/enum_vals.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-          <folding>
-            <marker date="1563125948594" expanded="true" signature="48:53" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts_python/redis_check.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
           <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="66" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts_python/plot_map.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-          <folding>
-            <marker date="1563132738131" expanded="true" signature="2146:2288" ph="..." />
           </folding>
         </state>
       </provider>
@@ -690,11 +684,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="48">
-            <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+            <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
           </first_editor>
           <second_editor>
             <js_state />
@@ -702,6 +703,26 @@
         </state>
       </provider>
       <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tw_streamer/engine/enum_vals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding>
+            <marker date="1563125948594" expanded="true" signature="48:53" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts_python/plot_map.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+          <folding>
+            <marker date="1563725670571" expanded="true" signature="2162:2304" ph="..." />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
