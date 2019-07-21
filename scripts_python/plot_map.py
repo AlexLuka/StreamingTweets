@@ -22,6 +22,7 @@ geometries = {
     'DE': None,
     'FL': None,
     'GA': None,
+    'ID': None,
     'IL': None,
     'MS': None,
     'NJ': None,
